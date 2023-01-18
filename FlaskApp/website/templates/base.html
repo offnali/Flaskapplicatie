@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="static/stylesheet.css">
+
+  <title>{% block title %}Home{% endblock%}</title>
+
+</head>
+  <body>
+    <header>   
+      <img class="logo" src="static/logo.png" alt="logo"> 
+      {% if session['logged_in'] == True %}      
+      <p1 class="session-user">{{ session['username'] }}</p1>  
+      {% endif %}
+      
+      <nav>
+        
+        <ul class="nav__links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/multimedia">Multimedia</a></li>
+          <li><a href="/contacts">Contacts</a></li>
+          {% if session['logged_in'] == True %}       
+          <a type="cta" href={{ url_for('auth.logout') }}><button id="nav-bar">Logout</button></a>         
+          {% else %}
+          <a type="cta" href={{ url_for('auth.login') }}><button id="nav-bar">Login</button></a>
+          
+          {% endif %}
+        </ul>
+      </nav>
+
+      <div class="container">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </header>
+  
+  <script
+    type="text/javascript"
+    src="{{ url_for('static', filename='index.js') }}"
+  ></script>
+  </body>
+</html>

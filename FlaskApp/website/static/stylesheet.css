@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+li, a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #red;
+  text-decoration: none;
+}
+
+#nav-bar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  height: 100px;
+  width: 15%;
+  height: 15%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  color: black;
+}
+
+.nav__links li a:hover {
+  color: #0088a9
+}
+
+#nav-bar {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(198,53,30,8);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+#nav-bar:hover {
+  background-color: rgba(198,53,30,1);
+}
+
+.loginbox {
+  width: 320px;
+  height: 420px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px;
+  background-color: #403c3c;
+  border-radius: 50px;
+
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+h1 {
+  margin: 10;
+  padding:0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginbox input[type="seatnumber"], input[type="lastname"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.loginbox input[type="submit"]
+{
+
+  padding: 9px 25px;
+  background-color: rgba(198,53,30,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.loginbox input[type="submit"]:hover
+{
+  cursor: pointer;
+  background-color: rgba(198,53,30,0.8);
+  color: #fff;
+}
+
+.loginbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.loginbox a:hover
+{
+  color: rgba(0,136,169,0.8);
+}
+
+.signinbox {
+  width: 320px;
+  height: 420px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px;
+}
+
+.signinbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.signinbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.signinbox input[type="email"], input[type="firstname"], input[type="username"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.signinbox input[type="submit"]
+{
+
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.signinbox input[type="submit"]:hover
+{
+  cursor: pointer;
+  background-color: rgba(0,136,169,0.8);
+  color: #fff;
+}
+
+.signinbox a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.signinbox a:hover
+{
+  color: rgba(0,136,169,0.8);
+}
+
+.session-user{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  margin-right: 50%;
+}
+
+.flashes {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}

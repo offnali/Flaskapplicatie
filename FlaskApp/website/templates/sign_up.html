@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Sign up{% endblock%}
+
+{% block content %}
+
+<div class = "signinbox">
+  <img src="static/avatar.png" class="avatar">
+  <h1>Sign Up </h1>
+  <form method="POST">
+
+    <label for="email">Email Address</label>
+    <input 
+    type="email" 
+    name="email" 
+    placeholder="Enter Email">
+
+    <label for="firstName">First Name</label>
+    <input 
+    type="firstname" 
+    name="firstName" 
+    placeholder="Enter first name">
+
+    <label for="Username">username</label>
+    <input 
+    type="username" 
+    name="username" 
+    placeholder="Enter Username">
+
+    <label for="password1">Password</label>
+    <input 
+    type="password" 
+    name="password1" 
+    placeholder="Enter password">
+
+    <label for="password2">Password (Confirm)</label>
+    <input 
+    type="password" 
+    name="password2" 
+    placeholder="Confirm password">
+
+    <input type="submit" name="" value="Sign up">
+
+    <a href="#">Lost your password?</a><br>
+    <a href="/sign-up">Don't have an account</a>
+  </form>
+</div>       
+
+{% endblock %}

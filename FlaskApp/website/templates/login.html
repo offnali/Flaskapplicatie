@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock%}
+
+{% block content %}
+
+<div class = "loginbox">
+  <img src="static/avatar.png" class="avatar">
+  <h1>Login here</h1>
+  <form method="POST">
+    <label for="seatnumber">Seat Number</label>
+    <input 
+    type="seatnumber" 
+    name="seatnumber" 
+    id="seatnumber"
+    placeholder="Enter Seat Number">
+
+    <label for="lastname">Last Name</label>
+    <input 
+    type="lastname" 
+    name="lastname" 
+    id="lastname"
+    placeholder="Enter Last Name">
+
+    <input type="submit" name="" value="Login">
+
+    <a href="#">Lost your password?</a><br>
+    <a href="/sign-up">Don't have an account</a>
+  </form>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul class=flashes>
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+
+</div>
+
+{% endblock %}
